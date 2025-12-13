@@ -125,7 +125,7 @@ abbrlink:
 
 hpptalk:
   enable: true 
-  domain: /hpp
+  domain: christ.de5.net
   path: lefts
   limit:
   start:
