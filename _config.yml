@@ -133,5 +133,6 @@ artitalk:
   js: https://unpkg.com/artitalk
   option:
   front_matter:
-    title: 随手留下一句 ^-^
+    title: 随手留下一句^-^
     comments: false
+    top_img: false
