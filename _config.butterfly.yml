@@ -270,15 +270,7 @@ footer:
   copyright:
     enable: true
     version: false
-  custom_text: <span id="bloggeractivetime"></span><script type="text/javascript">
-document.onreadystatechange = function(){
-    if(document.readyState == "complete"){
-        var ele = document.createElement("script");
-        ele.src = "https://christ.de5.net/hpp/api/getblogeractive";
-        document.body.appendChild(ele);
-     }
-}
-</script><a href="https://icp.gov.moe/?keyword=20252235">萌ICP备20252235号</a>
+  custom_text: <a href="https://icp.gov.moe/?keyword=20252235">萌ICP备20252235号</a>
 
 # --------------------------------------
 # Aside Settings
