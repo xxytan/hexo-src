@@ -125,7 +125,7 @@ abbrlink:
 
 hpptalk:
   enable: true 
-  domain: blog.mauz.top/hpp/
+  domain: /hpp
   path: lefts
   limit:
   start:
