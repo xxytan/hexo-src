@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://www.mauz.top
+url: https://blog.mauz.top
 permalink: archives/:abbrlink/
 permalink_defaults:
   lang: zh-CN
@@ -123,13 +123,13 @@ feed:
 abbrlink:
   start: 0 # the first id, default 0:
 
-hpptalk:
-  enable: true 
-  domain: christ.de5.net
-  path: lefts
-  limit:
-  start:
-  js:
-  css:
-  option:
-  front_matter:
+# Artitalk
+  # see https://artitalk.js.org/
+  artitalk:
+    enable: true
+    appId: vdS8weQKinVx4C0qki7PKKuJ-MdYXbMMI
+    appKey: ktAA2mZowjRJbJ8ceqaE1jwr
+    path: leaves
+    js: https://unpkg.com/artitalk
+    option:
+    front_matter::

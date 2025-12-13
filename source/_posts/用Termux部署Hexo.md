@@ -157,9 +157,9 @@ hexo s
 |hexo g|以当前配置生成文件，生成在`*/public`下|
 |hexo d|部署到远程仓库|
 |hexo cl|清理先前生成的文件|
-|hexo new post *|新建文章，`*`即文章名字，生成在`*/source/_posts`下|
-|hexo new draft *|新建草稿，`*`即草稿名字，生成在`*/source/_drafts`下|
-|hexo publish *|发布草稿为文章，`*`即要发布的草稿名字|
+|hexo new post ~|新建文章，`~`即文章名字，生成在`*/source/_posts`下|
+|hexo new draft ~|新建草稿，`~`即草稿名字，生成在`*/source/_drafts`下|
+|hexo publish ~|发布草稿为文章，`~`即要发布的草稿名字|
 
 {% note info %}
 前四条命令均为缩写，具体请查看[官方文档](https://hexo.io/zh-cn/docs/)
