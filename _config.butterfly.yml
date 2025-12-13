@@ -298,7 +298,7 @@ aside:
       link: https://github.com/xxytan
   card_announcement:
     enable: true
-    content: Nothing new❤️
+    content: 正在测试GitHub Actions部署Pages…
   card_recent_post:
     enable: true
     # If set 0 will show all
