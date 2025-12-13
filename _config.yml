@@ -132,4 +132,5 @@ artitalk:
   path: leaves
   js: https://unpkg.com/artitalk
   option:
-  front_matter::
+  front_matter:
+    comments: false
