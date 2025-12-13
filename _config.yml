@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://blog.mauz.top
+url: https://www.mauz.top
 permalink: archives/:abbrlink/
 permalink_defaults:
   lang: zh-CN
@@ -103,8 +103,8 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: git@github.com:xxytan/xxytan.github.io.git
-  branch: main-index
+  repo: git@github.com:xxytan/hexo-index.git
+  branch: main
 
 feed:
   enable: true

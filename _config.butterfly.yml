@@ -22,6 +22,7 @@ menu:
   归档: /archives || fas fa-archive
   分类: /categories || fas fa-folder-open
   标签: /tags || fas fa-tags
+  随言: /leaves || fas fa-message
   List||fas fa-list:
    # OneDrive: https://xytan-my.sharepoint.com/ || fas fa-cloud
     OneDrive-Index: https://d.mauz.top/ || fas fa-hard-drive
@@ -635,7 +636,7 @@ twikoo:
 # Giscus
 # https://giscus.app/
 giscus:
-  repo: xxytan/xxytan.github.io
+  repo: xxytan/hexo-index
   repo_id: R_kgDOPfg1rA
   category_id: DIC_kwDOPfg1rM4CzdBN
   light_theme: noborder_light
