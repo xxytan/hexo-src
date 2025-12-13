@@ -270,8 +270,7 @@ footer:
   copyright:
     enable: true
     version: false
-  custom_text: <span id="bloggeractivetime"></span>
-  <script type="text/javascript">
+  custom_text: <span id="bloggeractivetime"></span><script type="text/javascript">
 document.onreadystatechange = function(){
     if(document.readyState == "complete"){
         var ele = document.createElement("script");
@@ -279,8 +278,7 @@ document.onreadystatechange = function(){
         document.body.appendChild(ele);
      }
 }
-</script>
-  <a href="https://icp.gov.moe/?keyword=20252235">萌ICP备20252235号</a>
+</script><a href="https://icp.gov.moe/?keyword=20252235">萌ICP备20252235号</a>
 
 # --------------------------------------
 # Aside Settings
