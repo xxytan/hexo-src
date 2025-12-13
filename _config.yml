@@ -125,11 +125,11 @@ abbrlink:
 
 # Artitalk
   # see https://artitalk.js.org/
-  artitalk:
-    enable: true
-    appId: vdS8weQKinVx4C0qki7PKKuJ-MdYXbMMI
-    appKey: ktAA2mZowjRJbJ8ceqaE1jwr
-    path: leaves
-    js: https://unpkg.com/artitalk
-    option:
-    front_matter::
+artitalk:
+  enable: true
+  appId: vdS8weQKinVx4C0qki7PKKuJ-MdYXbMMI
+  appKey: ktAA2mZowjRJbJ8ceqaE1jwr
+  path: leaves
+  js: https://unpkg.com/artitalk
+  option:
+  front_matter::
