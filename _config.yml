@@ -122,3 +122,14 @@ feed:
 
 abbrlink:
   start: 0 # the first id, default 0:
+
+hpptalk:
+  enable: true 
+  domain: blog.mauz.top/hpp/
+  path: lefts
+  limit:
+  start:
+  js:
+  css:
+  option:
+  front_matter:
