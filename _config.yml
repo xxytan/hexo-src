@@ -130,7 +130,7 @@ artitalk:
   appId: vdS8weQKinVx4C0qki7PKKuJ-MdYXbMMI
   appKey: ktAA2mZowjRJbJ8ceqaE1jwr
   path: leaves
-  js: https://unpkg.com/artitalk
+  js:
   option:
   front_matter:
     title: 随手留下一句^-^
