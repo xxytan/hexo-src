@@ -130,8 +130,10 @@ artitalk:
   appId: vdS8weQKinVx4C0qki7PKKuJ-MdYXbMMI
   appKey: ktAA2mZowjRJbJ8ceqaE1jwr
   path: leaves
-  js:
+  js: https://unpkg.com/artitalk
   option:
+    serverURL: https://roc.us.ci/
+    shuoPla: Just type~
   front_matter:
     title: 随手留下一句^-^
     comments: false
