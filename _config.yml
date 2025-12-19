@@ -5,7 +5,7 @@
 # Site
 title: 小猫顶
 subtitle: 一个属于Kentural的博客
-description: 一个属于Kentural的博客
+description: 无聊的一天搭配神经的我～
 keywords: Kentural
 author: Kentural
 language: zh-CN
@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://www.mauz.top
+url: https://www.mauz.top/
 permalink: archives/:abbrlink/
 permalink_defaults:
   lang: zh-CN
