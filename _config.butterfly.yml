@@ -117,7 +117,7 @@ error_img:
 # A simple 404 page
 error_404:
   enable: true
-  subtitle: 'Not Found'
+  subtitle: 'mmh…Seems Page Not Found'
   background: /img/bgd3.jpg
 
 post_meta:
@@ -228,10 +228,10 @@ reward:
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit:
-  enable: false
+  enable: true
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  url:
+  url: https://github.com/xxytan.github.io/edit/main/source/
 
 # Related Articles
 related_post:
@@ -459,7 +459,7 @@ busuanzi:
 math:
   # Choose: mathjax, katex
   # Leave it empty if you don't need math
-  use: mathjax
+  use:
   per_page: true
   hide_scrollbar: false
 
@@ -1072,7 +1072,7 @@ CDN:
   # Note: Dev version can only use 'local' for internal scripts
   # Note: When setting third-party scripts to 'local', you need to install hexo-butterfly-extjs
   internal_provider: local
-  third_party_provider: jsdelivr
+  third_party_provider: unpkg
 
   # Add version number to url, true or false
   version: true
