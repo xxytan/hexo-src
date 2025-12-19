@@ -137,8 +137,8 @@ post_meta:
     date_type: both
     # Choose: date / relative
     date_format: date
-    categories: true
-    tags: true
+    categories: false
+    tags: false
     label: true
 
 # --------------------------------------
