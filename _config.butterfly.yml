@@ -269,7 +269,7 @@ footer:
          item:
            - html: <a href="https://github.com/xxytan/hexo-src"><img alt= "由Github托管" src="https://img.shields.io/badge/Repo-Github-blue?logo=github"></a>
            - html: <a href="https://www.cloudflare.com"><img alt="由CloudFlare提供全球加速" src="https://img.shields.io/badge/CDN-CloudFlare-red?logo=cloudflare"></a>
-           - html: <a href "https://vercel.com"><img alt="由Vercel驱动部分服务" src="https://img.shields.io/badge/Power-Vercel-white?logo=vercel"></a>
+           - html: <a href "https://vercel.com"><img alt="由Vercel驱动部分服务" src="image:https://img.shields.io/badge/Power-Vercel-white?logo=vercel&labelColor=black"></a>
      - content:
        - title: 线路
          item:
