@@ -270,6 +270,17 @@ footer:
            - html: <a href="https://github.com/xxytan/hexo-src"><img alt= "由Github托管" src="https://img.shields.io/badge/Repo-Github-blue?logo=github"></a>
            - html: <a href="https://www.cloudflare.com"><img alt="由CloudFlare提供全球加速" src="https://img.shields.io/badge/CDN-CloudFlare-red?logo=cloudflare"></a>
            - html: <a href "https://vercel.com"><img alt="由Vercel驱动部分服务" src="https://img.shields.io/badge/Power-Vercel-white?logo=vercel"></a>
+     - content:
+       - title: 线路
+         item:
+           - title: CloudFlare Pages
+             url: https://blog.mauz.top/
+           - title: GitHub Pages
+             url: https://obb.cc.cd/
+           - title: EdgeOne Pages
+             url: https://www.koe.qzz.io/
+           - title: Dev
+             url: https://localhost:4000/
   owner:
     enable: true
     since: 2025
@@ -649,8 +660,6 @@ giscus:
   dark_theme: noborder_dark
   js:
   option:
-    input-position: top
-    lang: zh-CN
 
 # Remark42
 # https://remark42.com/docs/configuration/frontend/
@@ -739,7 +748,7 @@ google_tag_manager:
 google_adsense:
   enable: false
   auto_ads: true
-  js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+  js:
   client:
   enable_page_level_ads: true
 
@@ -1023,13 +1032,13 @@ instantpage: true
 # Lazyload
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: false
+  enable: true
   # Use browser's native lazyload instead of vanilla-lazyload
   native: false
   # Specify the field to use lazyload (site or post)
   field: site
   placeholder:
-  blur: false
+  blur: true
 
 # PWA
 # See https://github.com/JLHwung/hexo-offline
