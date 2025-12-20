@@ -32,8 +32,9 @@ pkg install git&&openssh -y
 等待进程跑完然后
 
 #### 配置Git
-> 根据需求，选择是使用[Github](https://gothub.com)、[Gitlab](https://gitlab.com)还是[Gitee](https://gitee.com)
-> 以Github做演示
+{% note info %}
+根据需求，选择[Github](https://gothub.com)、[Gitlab](https://gitlab.com)还是[Gitee](https://gitee.com)
+以Github做演示
 
 逐条输入
 ``` bash
@@ -71,7 +72,7 @@ git commit -m "wow"
 git branch -M main
 git remote add origin git@github.com:'username'/'username'.github.io.git
 ```
-`'username'`就填Github用户名，然后再输入
+{% label username blue %}即Github用户名，然后再输入
 ``` bash
 git push -u origin main
 ```
@@ -148,7 +149,7 @@ git push --force origin main
 ``` bash
 git push --force origin main
 ```
-再到你的域名管理商添加`CNAME`记录，值为 `'username'.github.io`，`'username'`即Github用户名![4.png](https://img.mauz.top/file/blog/2/4.png)
+再到你的域名管理商添加`CNAME`记录，值为 `'username'.github.io`，{% label username blue %}即Github用户名![4.png](https://img.mauz.top/file/blog/2/4.png)
 继续到仓库设置的`Pages`，
 ## 部署到CloudFlare Pages
 
