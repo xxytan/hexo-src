@@ -35,6 +35,7 @@ pkg install git&&openssh -y
 {% note info %}
 根据需求，选择[Github](https://gothub.com)、[Gitlab](https://gitlab.com)还是[Gitee](https://gitee.com)
 以Github做演示
+{% endnote %}
 
 逐条输入
 ``` bash
@@ -72,7 +73,7 @@ git commit -m "wow"
 git branch -M main
 git remote add origin git@github.com:'username'/'username'.github.io.git
 ```
-{% label username blue %}即Github用户名，然后再输入
+{% label 'username' blue %}即Github用户名，然后再输入
 ``` bash
 git push -u origin main
 ```
