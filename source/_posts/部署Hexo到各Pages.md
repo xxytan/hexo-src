@@ -71,9 +71,9 @@ git init
 git add .
 git commit -m "wow"
 git branch -M main
-git remote add origin git@github.com:'username'/'username'.github.io.git
+git remote add origin git@github.com:username/username.github.io.git
 ```
-{% label 'username' blue %}即Github用户名，然后再输入
+{% label username blue %}即Github用户名，然后再输入
 ``` bash
 git push -u origin main
 ```
@@ -150,7 +150,7 @@ git push --force origin main
 ``` bash
 git push --force origin main
 ```
-再到你的域名管理商添加`CNAME`记录，值为 `'username'.github.io`，{% label username blue %}即Github用户名![4.png](https://img.mauz.top/file/blog/2/4.png)
+再到你的域名管理商添加`CNAME`记录，值为 `username.github.io`，{% label username blue %}即Github用户名![4.png](https://img.mauz.top/file/blog/2/4.png)
 继续到仓库设置的`Pages`，
 ## 部署到CloudFlare Pages
 
