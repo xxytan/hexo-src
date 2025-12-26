@@ -33,7 +33,7 @@ pkg install git&&openssh -y
 
 #### 配置Git
 {% note info %}
-根据需求，选择[Github](https://gothub.com)、[Gitlab](https://gitlab.com)还是[Gitee](https://gitee.com)
+根据需求，选择[Github](https://github.com)、[Gitlab](https://gitlab.com)还是[Gitee](https://gitee.com)
 以Github做演示
 {% endnote %}
 
@@ -79,11 +79,13 @@ git push -u origin main
 ```
 进程跑完后，博客文件就被托管到远程仓库了
 
-==接下来就是重头戏==
+接下来就是重头戏
 
-## 部署到GitHub Pages
+## 部署到各Pages
 
-### 开始
+### 部署到GitHub Pages
+
+#### 开始
 我们在博客文件夹下创建依次创建
 `.github/workflows/pages.yml`
 （先创建`.github`文件夹，再在里面创建`workflows`文件夹，再在里面创建 `pages.yml`文件），在文件里填入
@@ -145,16 +147,16 @@ git push --force origin main
 ```
 等待推送完毕，此时我们打开仓库的`Actions`，当一切皆绿时，我们点击`deploy`下面给的地址，就能访问我们的博客啦🎉!![6.png](https://img.mauz.top/file/blog/2/6.png)
 
-### 绑定域名
+#### 绑定域名
 在博客文件夹内创建一个`CNAME`文件，将要绑定的自定义域填入，然后
 ``` bash
 git push --force origin main
 ```
 再到你的域名管理商添加`CNAME`记录，值为 `username.github.io`，{% label username blue %}即Github用户名![4.png](https://img.mauz.top/file/blog/2/4.png)
 继续到仓库设置的`Pages`，
-## 部署到CloudFlare Pages
+### 部署到CloudFlare Pages
 
-### 开始
+#### 开始
 登录[Cloudflare 仪表盘](https://dash.cloudflare.com)，打开`计算和 AI`下的`Workers and Pages`，点`创建应用程序`，再点下面的`Get started`![7.png](https://img.mauz.top/file/blog/2/7.png)选择 `导入现有的 Git 存储库`，授权一下你的 Github，然后选择前面创建的仓库，再按下面的填：
 ``` bash
 npm install ; npm run build #构建命令
@@ -162,13 +164,13 @@ public #构建输出目录
 ```
 然后点保存并部署![8.png](https://img.mauz.top/file/blog/2/8.png)等待他部署完成，会给一个`xxxxx.pages.dev`的域名，点进去也是能够访问的
 
-### 绑定域名
+#### 绑定域名
 打开项目，点`自定义域`--`设置自定义域`，跟着引导走，等到呈现活动状态就能够通过自定义域访问了![9.png](https://img.mauz.top/file/blog/2/9.png)
 
-## 部署到EdgeOne Pages
+### 部署到EdgeOne Pages
 
-### 开始
+#### 开始
 登录[EdgeOne](https://console.tencentcloud.com/edgeone)，点`Pages`--`创建项目`--`导入 Git 仓库`，授权一下Github，然后选择前面创建的仓库，会自动匹配`框架预设`，我们就直接点开始部署就好了![10.png](https://img.mauz.top/file/blog/2/10.png)部署完毕后会有一个 `xxxxx.edgeone.xxx`域名，三个小时后过期，打开后也是能够访问的
 
-### 绑定域名
+#### 绑定域名
 打开项目，点到`项目设置`，找到`添加自定义域`，跟着引导走就行了，等到`DNS记录`&`证书`都呈现已部署状态就能通过自定义域名访问了![11.png](https://img.mauz.top/file/blog/2/11.png)

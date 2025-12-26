@@ -266,9 +266,9 @@ footer:
      - content:
        - title: 支持
          item:
-           - html: <a href="https://github.com/xxytan/hexo-src"><img alt= "由Github托管" src="https://img.shields.io/badge/Repo-Github-blue?logo=github"></a>
-           - html: <a href="https://www.cloudflare.com"><img alt="由CloudFlare提供全球加速" src="https://img.shields.io/badge/CDN-CloudFlare-red?logo=cloudflare"></a>
-           - html: <a href "https://vercel.com"><img alt="由Vercel驱动部分服务" src="https://img.shields.io/badge/Power-Vercel-white?logo=vercel&labelColor=black"></a>
+           - html: <a title="托管于Github" href="https://github.com/xxytan/hexo-src"><img src="https://img.shields.io/badge/Repo-Github-blue?logo=github"></a>
+           - html: <a title="由CloudFlare全球加速" href="https://www.cloudflare.com"><img src="https://img.shields.io/badge/CDN-CloudFlare-red?logo=cloudflare"></a>
+           - html: <a title="由Vercel驱动部分服务" href "https://vercel.com"><img src="https://img.shields.io/badge/Power-Vercel-white?logo=vercel&labelColor=black"></a>
      - content:
        - title: 线路
          item:
@@ -277,7 +277,9 @@ footer:
            - title: GitHub Pages
              url: https://obb.cc.cd/
            - title: EdgeOne Pages
-             url: https://www.koe.qzz.io/
+             url: https://eo.blog.mauz.top/
+           - title: Netlify
+             url: https://netlify.blog.mauz.top/
            - title: Dev
              url: https://localhost:4000/
   owner:
@@ -287,7 +289,7 @@ footer:
   copyright:
     enable: true
     version: false
-  custom_text: <a href="https://icp.gov.moe/?keyword=20252235"><img alt="本站已加入萌备" src="https://img.shields.io/badge/%E8%90%8CICP%E5%A4%87-20252235%E5%8F%B7-pink?labelColor=purple"></a>
+  custom_text: <a title="本站已加入萌备" href="https://icp.gov.moe/?keyword=20252235"><img src="https://img.shields.io/badge/%E8%90%8CICP%E5%A4%87-20252235%E5%8F%B7-pink?labelColor=purple"></a>
 
 # --------------------------------------
 # Aside Settings
