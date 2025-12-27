@@ -7,8 +7,10 @@ description: 轻松让你的Hexo在互联网永生
 cover: https://img.mauz.top/file/blog/2/cover.png
 ---
 ## 前言
+{% note default %}
 如何部署Hexo请移步[上篇文章](/p/1)
 也是以Termux为终端，桌面端的宝子除了终端不同，其他步骤是一样的哦
+{% endnote %}
 
 ## 准备工作
 
@@ -82,8 +84,15 @@ git push -u origin main
 接下来就是重头戏
 
 ## 部署到各Pages
+{% note warning %}
+优缺点各不相同，请自行选择
+{% endnote %}
 
 ### 部署到GitHub Pages
+{% note primary %}
+利用GitHub Actions部署
+国内容易被墙
+{% endnote %}
 
 #### 开始
 我们在博客文件夹下创建依次创建
@@ -153,8 +162,12 @@ git push --force origin main
 git push --force origin main
 ```
 再到你的域名管理商添加`CNAME`记录，值为 `username.github.io`，{% label username blue %}即Github用户名![4.png](https://img.mauz.top/file/blog/2/4.png)
-继续到仓库设置的`Pages`，
+继续到仓库设置的`Pages`，在右侧`Custom domain`下填入前面输入的自定义域，点`Save`，等待下方成`DNS check successful`，此时访问你的自定义域是能成功访问的🎉![12.e.g](https://img.mauz.top/file/blog/2/12.png)
+
 ### 部署到CloudFlare Pages
+{% note primary %}
+个人最推荐，后续可根据CM大佬的[优选方法](https://blog.cmliussss.com/p/BestWorkers#%E4%B8%BA-Pages-%E9%A1%B9%E7%9B%AE%E4%BD%BF%E7%94%A8%E4%BC%98%E9%80%89%E5%9F%9F%E5%90%8D)提升网站访问速度（前提得有域名）
+{% endnote %}
 
 #### 开始
 登录[Cloudflare 仪表盘](https://dash.cloudflare.com)，打开`计算和 AI`下的`Workers and Pages`，点`创建应用程序`，再点下面的`Get started`![7.png](https://img.mauz.top/file/blog/2/7.png)选择 `导入现有的 Git 存储库`，授权一下你的 Github，然后选择前面创建的仓库，再按下面的填：
@@ -168,6 +181,9 @@ public #构建输出目录
 打开项目，点`自定义域`--`设置自定义域`，跟着引导走，等到呈现活动状态就能够通过自定义域访问了![9.png](https://img.mauz.top/file/blog/2/9.png)
 
 ### 部署到EdgeOne Pages
+{% note primary %}
+腾讯的玩意儿，在国内的访问速度确实不错，后续也可以通过添加`A记录`优选
+{% note primary %}
 
 #### 开始
 登录[EdgeOne](https://console.tencentcloud.com/edgeone)，点`Pages`--`创建项目`--`导入 Git 仓库`，授权一下Github，然后选择前面创建的仓库，会自动匹配`框架预设`，我们就直接点开始部署就好了![10.png](https://img.mauz.top/file/blog/2/10.png)部署完毕后会有一个 `xxxxx.edgeone.xxx`域名，三个小时后过期，打开后也是能够访问的
