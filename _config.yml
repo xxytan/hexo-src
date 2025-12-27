@@ -128,12 +128,12 @@ abbrlink:
   # see https://artitalk.js.org/
 artitalk:
   enable: true
-  appId: b!tch
-  appKey: fuck
+  appId:
+  appKey:
   path: leaves
   js: https://unpkg.com/artitalk
   option:
-    serverURL: https://roc.us.ci/
+    serverURL: https://toe.us.ci/
     shuoPla: Just type~
   front_matter:
     title: 随手留下一句 ^-^
