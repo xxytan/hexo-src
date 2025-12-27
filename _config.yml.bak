@@ -128,8 +128,8 @@ abbrlink:
   # see https://artitalk.js.org/
 artitalk:
   enable: true
-  appId: bitch
-  appKey: slut
+  appId:
+  appKey:
   path: leaves
   js: https://unpkg.com/artitalk
   option:
