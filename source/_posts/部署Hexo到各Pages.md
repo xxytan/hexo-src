@@ -81,7 +81,7 @@ git push -u origin main
 ```
 进程跑完后，博客文件就被托管到远程仓库了
 
-接下来就是重头戏
+<mark>接下来就是重头戏</mark>
 
 ## 部署到各Pages
 {% note warning %}
@@ -183,7 +183,7 @@ public #构建输出目录
 ### 部署到EdgeOne Pages
 {% note primary %}
 腾讯的玩意儿，在国内的访问速度确实不错，后续也可以通过添加`A记录`优选
-{% note primary %}
+{% endnote%}
 
 #### 开始
 登录[EdgeOne](https://console.tencentcloud.com/edgeone)，点`Pages`--`创建项目`--`导入 Git 仓库`，授权一下Github，然后选择前面创建的仓库，会自动匹配`框架预设`，我们就直接点开始部署就好了![10.png](https://img.mauz.top/file/blog/2/10.png)部署完毕后会有一个 `xxxxx.edgeone.xxx`域名，三个小时后过期，打开后也是能够访问的
