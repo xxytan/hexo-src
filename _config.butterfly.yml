@@ -317,7 +317,7 @@ aside:
       link: https://github.com/xxytan
   card_announcement:
     enable: true
-    content: 已脱离deployer_git !
+    content: 新年快乐各位！
   card_recent_post:
     enable: true
     # If set 0 will show all
