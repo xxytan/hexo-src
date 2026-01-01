@@ -22,12 +22,13 @@ menu:
   归档: /archives || fas fa-archive
   分类: /categories || fas fa-folder-open
   标签: /tags || fas fa-tags
+  友链: /links || fas fa-user-group
   随言: /leaves || fas fa-message
-  List||fas fa-list:
+ # List||fas fa-list:
    # OneDrive: https://xytan-my.sharepoint.com/ || fas fa-cloud
-    OneDrive-Index: https://d.mauz.top/ || fas fa-hard-drive
-    Sink: https://mauz.top/dashboard/ || fas fa-link
-    Movies: https://tv.mauz.top/ || fas fa-tv
+   # OneDrive-Index: https://d.mauz.top/ || fas fa-hard-drive
+   # Sink: https://mauz.top/dashboard/ || fas fa-link
+   # Movies: https://tv.mauz.top/ || fas fa-tv
 
 # --------------------------------------
 # Code Blocks Settings

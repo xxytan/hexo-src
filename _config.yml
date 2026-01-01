@@ -122,20 +122,4 @@ feed:
   template:
 
 abbrlink:
-  start: 0 # the first id, default 0:
-
-# Artitalk
-  # see https://artitalk.js.org/
-artitalk:
-  enable: true
-  appId: bitch
-  appKey: slut
-  path: leaves
-  js: https://unpkg.com/artitalk
-  option:
-    serverURL: https://artitalk.koe.qzz.io/
-    shuoPla: Just type~
-  front_matter:
-    title: 随手留下一句 ^-^
-    comments: false
-    top_img: false
+  start: 0 # the first id, default 0

@@ -1,0 +1,15 @@
+- class_name: 友链
+  class_desc: 那些人，那些事
+  link_list:
+    - name: 二叉树树
+      link: https://blog.acofork.com/
+      avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=2726730791&spec=0
+      descr: Protect What You Love.
+
+- class_name: 网站
+  class_desc: 值得推荐的网站
+  link_list:
+    - name: E5 Description Dashboard
+      link: https://developer.microsoft.com/en-us/microsoft-365/profile
+      avatar: https://www.microsoft.com/favicon.ico
+      descr: 微软 E5开发者 订阅仪表盘
