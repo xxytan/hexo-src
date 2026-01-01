@@ -266,9 +266,9 @@ footer:
      - content:
        - title: 支持
          item:
-           - html: <a title="托管于Github" href="https://github.com/xxytan/hexo-src"><img src="https://img.shields.io/badge/Repo-Github-blue?logo=github"></a>
-           - html: <a title="由CloudFlare全球加速" href="https://www.cloudflare.com"><img src="https://img.shields.io/badge/CDN-CloudFlare-red?logo=cloudflare"></a>
-           - html: <a title="由Vercel驱动部分服务" href "https://vercel.com"><img src="https://img.shields.io/badge/Power-Vercel-white?logo=vercel&labelColor=black"></a>
+           - html: <a title="托管于Github" target="_blank" href="https://github.com/xxytan/hexo-src"><img src="https://img.shields.io/badge/Repo-Github-blue?logo=github"></a>
+           - html: <a title="由CloudFlare全球加速" target="_blank" href="https://www.cloudflare.com"><img src="https://img.shields.io/badge/CDN-CloudFlare-red?logo=cloudflare"></a>
+           - html: <a title="由Vercel驱动部分服务" target="_blank" href "https://vercel.com"><img src="https://img.shields.io/badge/Power-Vercel-white?logo=vercel&labelColor=black"></a>
      - content:
        - title: 线路
          item:
@@ -1037,8 +1037,8 @@ lazyload:
   # Use browser's native lazyload instead of vanilla-lazyload
   native: false
   # Specify the field to use lazyload (site or post)
-  field: site
-  placeholder:
+  field: post
+  placeholder: /self/loading.gif
   blur: true
 
 # PWA
