@@ -459,9 +459,9 @@ wordcount:
 
 # Busuanzi count for PV / UV in site
 busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+  site_uv: false
+  site_pv: false
+  page_pv: false
 
 # --------------------------------------
 # Math
@@ -718,20 +718,20 @@ google_analytics:
 cloudflare_analytics:
 
 # https://clarity.microsoft.com/
-microsoft_clarity: uon018j2rw
+microsoft_clarity:
 
 # https://umami.is/
 umami_analytics:
-  enable: false
+  enable: true
   # For self-hosted setups, configure the hostname of the Umami instance
-  serverURL:
+  serverURL: https://umami.oxue.de/
   script_name: script.js
-  website_id:
+  website_id: d5f3be23-ad98-48a3-a27a-4574f43eb27c
   option:
   UV_PV:
-    site_uv: false
-    site_pv: false
-    page_pv: false
+    site_uv: true
+    site_pv: true
+    page_pv: true
     # Umami Cloud (API key) / self-hosted Umami (token)
     token:
 
