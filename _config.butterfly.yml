@@ -275,9 +275,9 @@ footer:
            - title: CloudFlare Pages
              url: https://b.oxue.de/
            - title: GitHub Pages
-             url: https://www.roc.us.ci/
-           - title: EdgeOne Pages
              url: https://roc.us.ci/
+           - title: EdgeOne Pages
+             url: https://www.roc.us.ci/
   owner:
     enable: true
     since: 2025
