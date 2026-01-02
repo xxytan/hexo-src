@@ -49,6 +49,8 @@ descr: 描述
       descr: 本站域名注册商，六位纯.xyz最便宜
 {% endflink %}
 
+---
+
 <script src="https://giscus.app/client.js"
         data-repo="xxytan/discuss-only"
         data-repo-id="R_kgDOQr23UA"
@@ -59,8 +61,9 @@ descr: 描述
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="top"
-        data-theme="preferred_color_scheme"
+        data-theme="fro"
         data-lang="zh-CN"
+        data-loading="lazy"
         crossorigin="anonymous"
         async>
 </script>
