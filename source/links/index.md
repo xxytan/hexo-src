@@ -8,7 +8,7 @@ highlight_shrink: true
 在线的朋友？
 
 {% note default simple %}
-贵站如需加入请以一下格式在下方评论区留言❤️
+贵站如需加入请以以下格式在下方评论区留言❤️
 ``` yaml
 name: 名字
 link: 链接
@@ -47,4 +47,3 @@ descr: 描述
       avatar: https://spaceship-cdn.com/static/spaceship/favicon/spaceship-icon.svg
       descr: 本站域名注册商，六位纯.xyz最便宜
 {% endflink %}
-

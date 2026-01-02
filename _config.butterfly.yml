@@ -609,11 +609,15 @@ valine:
 # Waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL:
+  serverURL: https://waline.koe.qzz.io/.netlify/functions/comment
   bg:
   # Use Waline pageview count as the page view count
   pageview: false
   option:
+    reaction: true
+    emoji: [
+      '//unpkg.com/@waline/emojis@1.4.0/qq'
+    ]
 
 # Utterances
 # https://utteranc.es/
