@@ -4,7 +4,7 @@ date: 2025-12-21 01:22:49
 tags: [Hexo, Termux, Pages]
 categories: [Hexo, Pages]
 description: 轻松让你的Hexo在互联网永生
-cover: https://img.mauz.top/file/blog/2/cover.png
+cover: https://img.oxue.de/file/blog/2/cover.png
 ---
 ## 前言
 {% note default %}
@@ -57,10 +57,10 @@ ssh-keygen -t rsa -C "你的Github绑定邮箱"
 cat ~/.ssh/id_rsa.pub
 ```
 查看公钥，把反出的一大长串复制下来，
-然后打开[SSH and GPG Keys](https://github.com/settings/keys)，往下滑，`点New SSH Key`，照下图填写![1.png](https://img.mauz.top/file/blog/2/1.png)然后点 `Add SSH Key`
+然后打开[SSH and GPG Keys](https://github.com/settings/keys)，往下滑，`点New SSH Key`，照下图填写![1.png](https://img.oxue.de/file/blog/2/1.png)然后点 `Add SSH Key`
 
 ## 将代码托管到Github仓库
-点[New Repository](https://github.com/new)创建新仓库，仓库名称就按`Github用户名.github.io`来填，仓库保持公开![2.png](https://img.mauz.top/file/blog/2/2.png)然后点`Create Repository`
+点[New Repository](https://github.com/new)创建新仓库，仓库名称就按`Github用户名.github.io`来填，仓库保持公开![2.png](https://img.oxue.de/file/blog/2/2.png)然后点`Create Repository`
 
 ### 初始化仓库
 返回Termux，输入
@@ -149,20 +149,20 @@ jobs:
 ```
 并保存，
 
-打开仓库设置里的`Pages`，把`Bulid and eployment`下的`Source`从 `Deploy from a branch`改为`GitHub Actions`，![3.png](https://img.mauz.top/file/blog/2/3.png)
+打开仓库设置里的`Pages`，把`Bulid and eployment`下的`Source`从 `Deploy from a branch`改为`GitHub Actions`，![3.png](https://img.oxue.de/file/blog/2/3.png)
 返回Termux，输入
 ``` bash
 git push --force origin main
 ```
-等待推送完毕，此时我们打开仓库的`Actions`，当一切皆绿时，我们点击`deploy`下面给的地址，就能访问我们的博客啦🎉!![6.png](https://img.mauz.top/file/blog/2/6.png)
+等待推送完毕，此时我们打开仓库的`Actions`，当一切皆绿时，我们点击`deploy`下面给的地址，就能访问我们的博客啦🎉!![6.png](https://img.oxue.de/file/blog/2/6.png)
 
 #### 绑定域名
 在博客文件夹内创建一个`CNAME`文件，将要绑定的自定义域填入，然后
 ``` bash
 git push --force origin main
 ```
-再到你的域名管理商添加`CNAME`记录，值为 `username.github.io`，{% label username blue %}即Github用户名![4.png](https://img.mauz.top/file/blog/2/4.png)
-继续到仓库设置的`Pages`，在右侧`Custom domain`下填入前面输入的自定义域，点`Save`，等待下方成`DNS check successful`，此时访问你的自定义域是能成功访问的🎉![12.e.g](https://img.mauz.top/file/blog/2/12.png)
+再到你的域名管理商添加`CNAME`记录，值为 `username.github.io`，{% label username blue %}即Github用户名![4.png](https://img.oxue.de/file/blog/2/4.png)
+继续到仓库设置的`Pages`，在右侧`Custom domain`下填入前面输入的自定义域，点`Save`，等待下方成`DNS check successful`，此时访问你的自定义域是能成功访问的🎉![12.e.g](https://img.oxue.de/file/blog/2/12.png)
 
 ### 部署到CloudFlare Pages
 {% note primary %}
@@ -170,15 +170,15 @@ git push --force origin main
 {% endnote %}
 
 #### 开始
-登录[Cloudflare 仪表盘](https://dash.cloudflare.com)，打开`计算和 AI`下的`Workers and Pages`，点`创建应用程序`，再点下面的`Get started`![7.png](https://img.mauz.top/file/blog/2/7.png)选择 `导入现有的 Git 存储库`，授权一下你的 Github，然后选择前面创建的仓库，再按下面的填：
+登录[Cloudflare 仪表盘](https://dash.cloudflare.com)，打开`计算和 AI`下的`Workers and Pages`，点`创建应用程序`，再点下面的`Get started`![7.png](https://img.oxue.de/file/blog/2/7.png)选择 `导入现有的 Git 存储库`，授权一下你的 Github，然后选择前面创建的仓库，再按下面的填：
 ``` bash
 npm install ; npm run build #构建命令
 public #构建输出目录
 ```
-然后点保存并部署![8.png](https://img.mauz.top/file/blog/2/8.png)等待他部署完成，会给一个`xxxxx.pages.dev`的域名，点进去也是能够访问的
+然后点保存并部署![8.png](https://img.oxue.de/file/blog/2/8.png)等待他部署完成，会给一个`xxxxx.pages.dev`的域名，点进去也是能够访问的
 
 #### 绑定域名
-打开项目，点`自定义域`--`设置自定义域`，跟着引导走，等到呈现活动状态就能够通过自定义域访问了![9.png](https://img.mauz.top/file/blog/2/9.png)
+打开项目，点`自定义域`--`设置自定义域`，跟着引导走，等到呈现活动状态就能够通过自定义域访问了![9.png](https://img.oxue.de/file/blog/2/9.png)
 
 ### 部署到EdgeOne Pages
 {% note primary %}
@@ -186,7 +186,7 @@ public #构建输出目录
 {% endnote%}
 
 #### 开始
-登录[EdgeOne](https://console.tencentcloud.com/edgeone)，点`Pages`--`创建项目`--`导入 Git 仓库`，授权一下Github，然后选择前面创建的仓库，会自动匹配`框架预设`，我们就直接点开始部署就好了![10.png](https://img.mauz.top/file/blog/2/10.png)部署完毕后会有一个 `xxxxx.edgeone.xxx`域名，三个小时后过期，打开后也是能够访问的
+登录[EdgeOne](https://console.tencentcloud.com/edgeone)，点`Pages`--`创建项目`--`导入 Git 仓库`，授权一下Github，然后选择前面创建的仓库，会自动匹配`框架预设`，我们就直接点开始部署就好了![10.png](https://img.oxue.de/file/blog/2/10.png)部署完毕后会有一个 `xxxxx.edgeone.xxx`域名，三个小时后过期，打开后也是能够访问的
 
 #### 绑定域名
-打开项目，点到`项目设置`，找到`添加自定义域`，跟着引导走就行了，等到`DNS记录`&`证书`都呈现已部署状态就能通过自定义域名访问了![11.png](https://img.mauz.top/file/blog/2/11.png)
+打开项目，点到`项目设置`，找到`添加自定义域`，跟着引导走就行了，等到`DNS记录`&`证书`都呈现已部署状态就能通过自定义域名访问了![11.png](https://img.oxue.de/file/blog/2/11.png)

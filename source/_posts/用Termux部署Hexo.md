@@ -27,13 +27,13 @@ cover: https://hexo.io/themes/screenshots/landscape.png
 ``` bash
 termux-change-repo
 ```
-并回车，此时会出现![1.这样的界面](https://img.mauz.top/file/blog/1/1.png)
+并回车，此时会出现![1.这样的界面](https://img.oxue.de/file/blog/1/1.png)
 
 {% note primary %}
 _可以使用**右下角的方向按钮**操控，也可以直接用手点_
 {% endnote %}
 
-选择第二个选项，便会出现![2.这样的界面](https://img.mauz.top/file/blog/1/2.png)
+选择第二个选项，便会出现![2.这样的界面](https://img.oxue.de/file/blog/1/2.png)
 
 {% note primary %}
 _如果您英文很好，那么可以根据右边的注释来选择，_ 否则直接**选带有`tuna`字样**的，这是清华大学的镜像源
@@ -85,9 +85,9 @@ hexo init blog
 <!-- endtab -->
 
 <!-- tab 非ROOT用户 -->
-您就无法直接访问`blog`文件夹，此时您就可以在ZeroTermux的设置中![3.通过向右划或按音量➕打开该菜单](https://img.mauz.top/file/blog/1/3.png)
+您就无法直接访问`blog`文件夹，此时您就可以在ZeroTermux的设置中![3.通过向右划或按音量➕打开该菜单](https://img.oxue.de/file/blog/1/3.png)
 依次点击`安装/还原Termux官方软件`--`(Zero)Utermux File Plug`--`确定`，稍等片刻便会开始安装质感文件
-安装完成后打开，点击左上角三横线，你就会看到`访问Utermux文件`![4.e.g](https://img.mauz.top/file/blog/1/4.jpg)
+安装完成后打开，点击左上角三横线，你就会看到`访问Utermux文件`![4.e.g](https://img.oxue.de/file/blog/1/4.jpg)
 点它你就能看到`blog`文件夹，这样就能查看和编辑配置文件了
 <!-- endtab -->
 
@@ -98,7 +98,7 @@ hexo init blog
 ``` bash
 hexo s
 ```
-运行后[本地地址4000端口](http://localhost:4000)会映射出内容，在浏览器中打开它，不出所料，你就能看到![5.这样的页面](https://img.mauz.top/file/blog/1/5.png)
+运行后[本地地址4000端口](http://localhost:4000)会映射出内容，在浏览器中打开它，不出所料，你就能看到![5.这样的页面](https://img.oxue.de/file/blog/1/5.png)
 这就说明你的**Hexo已经部署成功了！**
 
 ## 常用的操作命令

@@ -99,14 +99,6 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: butterfly
 
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
-
-# deploy:
-#   type: git
-#   repo: git@github.com:xxytan/hexo-index.git
-#   branch: main
-
 feed:
   enable: true
   type: atom
