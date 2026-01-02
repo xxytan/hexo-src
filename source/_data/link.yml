@@ -7,7 +7,7 @@
       descr: Protect What You Love.
 
 - class_name: 网站
-  class_desc: 值得推荐的网站
+  class_desc: 杂杂杂…
   link_list:
     - name: E5仪表盘
       link: https://developer.microsoft.com/en-us/microsoft-365/profile
@@ -17,3 +17,7 @@
       link: https://www.spaceship.com/zh
       avatar: https://spaceship-cdn.com/static/spaceship/favicon/spaceship-icon.svg
       descr: 本站域名注册商，六位纯.xyz最便宜
+    - name: Mysxl
+      link: https://xytan.mysxl.cn
+      avatar: https://xytan.mysxl.cn/favicon.ico
+      descr: 小学的时候搞的旧站
