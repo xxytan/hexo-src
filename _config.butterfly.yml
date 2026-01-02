@@ -726,14 +726,14 @@ umami_analytics:
   # For self-hosted setups, configure the hostname of the Umami instance
   serverURL: https://umami.oxue.de/
   script_name: script.js
-  website_id: d5f3be23-ad98-48a3-a27a-4574f43eb27c
+  website_id: 40189699-9d29-4646-9fb0-fb0376761b01
   option:
   UV_PV:
     site_uv: true
     site_pv: true
     page_pv: true
     # Umami Cloud (API key) / self-hosted Umami (token)
-    token:
+    token: YEilJclUpfUe3VQrstv1PP38VG758B1/ED3D7xzojttFXkOUfX+dX5RV7H9WgjwAaTqP2I7+cSCk5AoUsCVx54Vgx7RcgoPGj3O9K8h3uwjxcLGGZdrhDX+rGAGD5TAA6sp6TJPjw/MriCK6p2Hu9SLOhSyJf66H8rBJshISTZprd/h8bNBXKv0y5PDmhY44XaAFSToYlno0WfcNvNAdhttLN0qw8IfC2nvfx6WFw6nZryWMDfHdZjejQG0nsTwnE1DCMu5UdxEKOy11XaW+0NwOoE1Obg8AyBd2Z2SxZRjxWb4esA++irY7hm0qbRqQFOxcuPejq6b1usk72scTwEL5+TW6BDHOmV8yvUUAVdiBuvxhDKoXDKlDkC7u+hcNnfS1
 
 # https://www.googletagmanager.com/
 google_tag_manager:
