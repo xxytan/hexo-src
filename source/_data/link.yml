@@ -1,5 +1,5 @@
 - class_name: 友链
-  class_desc: 那些人，那些事
+  class_desc: 贵站如需加入请在下方评论留言哦！
   link_list:
     - name: 二叉树树
       link: https://blog.acofork.com/
@@ -9,7 +9,11 @@
 - class_name: 网站
   class_desc: 值得推荐的网站
   link_list:
-    - name: E5 Description Dashboard
+    - name: E5仪表盘
       link: https://developer.microsoft.com/en-us/microsoft-365/profile
       avatar: https://www.microsoft.com/favicon.ico
-      descr: 微软 E5开发者 订阅仪表盘
+      descr: Microsoft E5 开发者订阅仪表盘
+    - name: Spaceship
+      link: https://www.spaceship.com/zh
+      avatar: https://spaceship-cdn.com/static/spaceship/favicon/spaceship-icon.svg
+      descr: 本站域名注册商，六位纯.xyz最便宜
