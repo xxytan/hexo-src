@@ -3,6 +3,7 @@ title: 友情链接
 date: 2026-01-01 13:51:39
 top_img: transparent
 highlight_shrink: true
+comments: false
 ---
 # 友链
 在线的朋友？
@@ -47,3 +48,19 @@ descr: 描述
       avatar: https://spaceship-cdn.com/static/spaceship/favicon/spaceship-icon.svg
       descr: 本站域名注册商，六位纯.xyz最便宜
 {% endflink %}
+
+<script src="https://giscus.app/client.js"
+        data-repo="xxytan/discuss-only"
+        data-repo-id="R_kgDOQr23UA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOQr23UM4C0BTd"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="noborder_gray"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
