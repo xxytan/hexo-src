@@ -19,23 +19,21 @@ descr: 描述
 
 {% flink %}
 - link_list:
-    - name: Xytan's Website
-      link: https://xytan.mysxl.cn
-      avatar: https://xytan.mysxl.cn/favicon.ico
-      descr: 小学的时候搞的旧站
     - name: 二叉树树
       link: https://blog.acofork.com/
       avatar: https://q2.qlogo.cn/headimg_dl?dst_uin=2726730791&spec=0
       descr: Protect What You Love.
+    - name: Xytan's Website
+      link: https://xytan.mysxl.cn
+      avatar: https://xytan.mysxl.cn/favicon.ico
+      descr: 小学的时候搞的旧站
     - name: CrazyWong
       link: https://blog.crazywong.com
       avatar: https://blog.crazywong.com/img/avatar.png
       descr: 热衷学习，热衷生活
 {% endflink %}
 
-# 网站
-杂杂杂！
-
+#网站
 {% flink %}
 - link_list:
     - name: E5仪表盘
