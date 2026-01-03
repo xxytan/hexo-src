@@ -726,14 +726,14 @@ umami_analytics:
   # For self-hosted setups, configure the hostname of the Umami instance
   serverURL: https://umami.oxue.de/
   script_name: script.js
-  website_id: 40189699-9d29-4646-9fb0-fb0376761b01
+  website_id: ff94c501-ac73-48a0-ab83-a10000eb532c
   option:
   UV_PV:
     site_uv: true
     site_pv: true
     page_pv: true
     # Umami Cloud (API key) / self-hosted Umami (token)
-    token: GSS3CkyFxM1Rmsy6xNIE7wak3AwWF3A0Q5eEaiZAHQ/8RFm6QYxULsslsAjUPIxkpuU5j6NrIyc8L6zZxBhCKrUriBOdfAHzOXnHEPP9BfKB0D/7j6RS7rdIg9fG7NLVYHGPzYfhmcSsOzNWxyEY7bFq61dxovPAXrNMsY//EZ9t/jZMFfW+kSOYPp40SCbbp4DxGN8/5SoewO9q50S7U6czH676B0ra3HEmguvf3/gvXbbbwGCLeqbyCXeYmwFoFXB6ICIRdNEaQSqBCpWXk+1K06+RyP0gJDnRT5AvLu1AffZsNbcp6WbVtT4NFDtKXOQckl5TeWd1k9MoXRTRlwHymQpxdjGhyiDxtG0Lf/SyH/FcrwhNwhUbQGxQtKEfSXKU
+    token: MCQEZYTL9g93QhS+OS+PNEfxSbAIN9tROyxWXnWpgp1QLcgTCXOguHfUUa3xfejm6AxplIjopSIzgv4gSymXWuehuOj4SGMQFLt/u/wbKcGkrOcSviQqhJi5hF29xfkG41B18tqQ28PS8fTS4O1kUAjZzQp7+f+FZDsb0LAeihj1/CPzHhSsSqhh0h2OgH6dkjHdS6nha6dw0n5bQ403l/Vu06h07t+k58OLOQrypr2ZYdfPl79gFVIDvTxgRi7VMESZPWfrLE16A2+wc2Dk4Q+HlnqfE853vtIQ6CTIG+owfjg0g2TlLJavCYXGEDjDi2WlCO8fIc/VM0atNBXK6xflU0yc7VW1+73cZOwEadKuJo6wD9myU9Sy9Bg4tZgIIRyy
 
 # https://www.googletagmanager.com/
 google_tag_manager:
@@ -1082,7 +1082,7 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    # - <script src="xxxx"></script>
+    # - <script defer src="https://umami.oxue.de/script.js" data-website-id="40189699-9d29-4646-9fb0-fb0376761b01"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
