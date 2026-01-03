@@ -733,7 +733,7 @@ umami_analytics:
     site_pv: true
     page_pv: true
     # Umami Cloud (API key) / self-hosted Umami (token)
-    token:MCQEZYTL9g93QhS+OS+PNEfxSbAIN9tROyxWXnWpgp1QLcgTCXOguHfUUa3xfejm6AxplIjopSIzgv4gSymXWuehuOj4SGMQFLt/u/wbKcGkrOcSviQqhJi5hF29xfkG41B18tqQ28PS8fTS4O1kUAjZzQp7+f+FZDsb0LAeihj1/CPzHhSsSqhh0h2OgH6dkjHdS6nha6dw0n5bQ403l/Vu06h07t+k58OLOQrypr2ZYdfPl79gFVIDvTxgRi7VMESZPWfrLE16A2+wc2Dk4Q+HlnqfE853vtIQ6CTIG+owfjg0g2TlLJavCYXGEDjDi2WlCO8fIc/VM0atNBXK6xflU0yc7VW1+73cZOwEadKuJo6wD9myU9Sy9Bg4tZgIIRyy
+    token: MCQEZYTL9g93QhS+OS+PNEfxSbAIN9tROyxWXnWpgp1QLcgTCXOguHfUUa3xfejm6AxplIjopSIzgv4gSymXWuehuOj4SGMQFLt/u/wbKcGkrOcSviQqhJi5hF29xfkG41B18tqQ28PS8fTS4O1kUAjZzQp7+f+FZDsb0LAeihj1/CPzHhSsSqhh0h2OgH6dkjHdS6nha6dw0n5bQ403l/Vu06h07t+k58OLOQrypr2ZYdfPl79gFVIDvTxgRi7VMESZPWfrLE16A2+wc2Dk4Q+HlnqfE853vtIQ6CTIG+owfjg0g2TlLJavCYXGEDjDi2WlCO8fIc/VM0atNBXK6xflU0yc7VW1+73cZOwEadKuJo6wD9myU9Sy9Bg4tZgIIRyy
 
 # https://www.googletagmanager.com/
 google_tag_manager:

@@ -5,6 +5,12 @@ const { prettyUrls } = require('hexo-util')
 const crypto = require('crypto')
 const moment = require('moment-timezone')
 
+const absoluteUrlPattern = /^(?:[a-z][a-z\d+.-]*:)?\/\//i
+const relativeUrlPattern = /^(\.\/|\.\.\/|\/|[^/]+\/).*$/
+const colorPattern = /^(#|rgb|rgba|hsl|hsla)/i
+const simpleFilePattern = /\.(png|jpg|jpeg|gif|bmp|webp|svg|tiff)$/i
+const archiveRegex = /\/archives\//
+
 hexo.extend.helper.register('truncate', truncateContent)
 
 hexo.extend.helper.register('postDesc', data => {
@@ -20,32 +26,27 @@ hexo.extend.helper.register('cloudTags', function (options = {}) {
   }
 
   const sizes = [...new Set(source.map(tag => tag.length).sort((a, b) => a - b))]
+  const sizeMap = new Map(sizes.map((size, index) => [size, index]))
+  const length = sizes.length - 1
 
   const getRandomColor = () => {
-    const randomColor = () => Math.floor(Math.random() * 201)
-    const r = randomColor()
-    const g = randomColor()
-    const b = randomColor()
+    const r = Math.floor(Math.random() * 201)
+    const g = Math.floor(Math.random() * 201)
+    const b = Math.floor(Math.random() * 201)
     return `rgb(${Math.max(r, 50)}, ${Math.max(g, 50)}, ${Math.max(b, 50)})`
   }
 
   const generateStyle = (size, unit, page) => {
-    if (page === 'tags') {
-      return `font-size: ${parseFloat(size.toFixed(2)) + unit}; background-color: ${getRandomColor()};`
-    } else {
-      return `font-size: ${parseFloat(size.toFixed(2)) + unit}; color: ${getRandomColor()};`
-    }
+    const colorStyle = page === 'tags' ? `background-color: ${getRandomColor()};` : `color: ${getRandomColor()};`
+    return `font-size: ${parseFloat(size.toFixed(2))}${unit}; ${colorStyle}`
   }
 
-  const length = sizes.length - 1
-  const result = source.sort(orderby, order).map(tag => {
-    const ratio = length ? sizes.indexOf(tag.length) / length : 0
+  return source.sort(orderby, order).map(tag => {
+    const ratio = length ? sizeMap.get(tag.length) / length : 0
     const size = minfontsize + ((maxfontsize - minfontsize) * ratio)
     const style = generateStyle(size, unit, page)
     return `<a href="${env.url_for(tag.path)}" style="${style}">${tag.name}</a>`
   }).join('')
-
-  return result
 })
 
 hexo.extend.helper.register('urlNoIndex', function (url = null, trailingIndex = false, trailingHtml = false) {
@@ -77,7 +78,7 @@ hexo.extend.helper.register('findArchivesTitle', function (page, menu, date) {
         if (result) return result
       }
 
-      if (/\/archives\//.test(m[key])) {
+      if (archiveRegex.test(m[key])) {
         return key
       }
     }
@@ -89,13 +90,9 @@ hexo.extend.helper.register('findArchivesTitle', function (page, menu, date) {
 hexo.extend.helper.register('getBgPath', function (path) {
   if (!path) return ''
 
-  const absoluteUrlPattern = /^(?:[a-z][a-z\d+.-]*:)?\/\//i
-  const relativeUrlPattern = /^(\.\/|\.\.\/|\/|[^/]+\/).*$/
-  const colorPattern = /^(#|rgb|rgba|hsl|hsla)/i
-
   if (colorPattern.test(path)) {
     return `background-color: ${path};`
-  } else if (absoluteUrlPattern.test(path) || relativeUrlPattern.test(path)) {
+  } else if (absoluteUrlPattern.test(path) || relativeUrlPattern.test(path) || simpleFilePattern.test(path)) {
     return `background-image: url(${this.url_for(path)});`
   } else {
     return `background: ${path};`
@@ -104,39 +101,34 @@ hexo.extend.helper.register('getBgPath', function (path) {
 
 hexo.extend.helper.register('shuoshuoFN', (data, page) => {
   const { limit } = page
-  let finalResult = ''
+
+  // Shallow copy to avoid mutating original data
+  let processedData = data.map(item => ({ ...item }))
 
   // Check if limit.value is a valid date
   const isValidDate = date => !isNaN(Date.parse(date))
 
   // order by date
-  const orderByDate = data => data.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
+  processedData.sort((a, b) => Date.parse(b.date) - Date.parse(a.date))
 
   // Apply number limit or time limit conditionally
-  const limitData = data => {
-    if (limit && limit.type === 'num' && limit.value > 0) {
-      return data.slice(0, limit.value)
-    } else if (limit && limit.type === 'date' && isValidDate(limit.value)) {
-      const limitDate = Date.parse(limit.value)
-      return data.filter(item => Date.parse(item.date) >= limitDate)
-    }
-
-    return data
+  if (limit && limit.type === 'num' && limit.value > 0) {
+    processedData = processedData.slice(0, limit.value)
+  } else if (limit && limit.type === 'date' && isValidDate(limit.value)) {
+    const limitDate = Date.parse(limit.value)
+    processedData = processedData.filter(item => Date.parse(item.date) >= limitDate)
   }
-
-  orderByDate(data)
-  finalResult = limitData(data)
 
   // This is a hack method, because hexo treats time as UTC time
   // so you need to manually convert the time zone
-  finalResult.forEach(item => {
+  processedData.forEach(item => {
     const utcDate = moment.utc(item.date).format('YYYY-MM-DD HH:mm:ss')
     item.date = moment.tz(utcDate, hexo.config.timezone).format('YYYY-MM-DD HH:mm:ss')
     // markdown
     item.content = hexo.render.renderSync({ text: item.content, engine: 'markdown' })
   })
 
-  return finalResult
+  return processedData
 })
 
 hexo.extend.helper.register('getPageType', (page, isHome) => {
