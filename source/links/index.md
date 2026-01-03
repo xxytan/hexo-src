@@ -16,6 +16,13 @@ link: 链接
 avatar: 头像
 descr: 描述
 ```
+_例如我的_
+``` yaml
+name: 傲雪の
+link: https://b.oxue.de/
+avatar: https://b.oxue.de/self/favicon.jpg
+descr: 无聊的一天搭配神经的我～
+```
 {% endnote %}
 
 {% flink %}
