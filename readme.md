@@ -2,9 +2,9 @@
 ![Screenshot](https://img.oxue.de/file/blog/index.jpg)
 
 ### Different *Pages*
-|GitHub|CloudFlare|EdgeOne|
-|-|-|-|
-|[View](https://www.roc.us.ci)|[View](https://b.oxue.de)|[View](https://roc.us.ci)|
+|CloudFlare|Github&EdgeOne|
+|-|-|
+|[View](https://b.oxue.de)|[View](https://koe.qzz.io)|
 
 ### Support
 - Powered by [Hexo](https://hexo.io) & [Butterfly](https://butterfly.js.org)

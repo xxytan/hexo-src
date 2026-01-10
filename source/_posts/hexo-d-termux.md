@@ -1,11 +1,11 @@
 ---
+permalink: p/1/
 title: 用Termux部署Hexo
 date: 2025-08-15 09:44:03
 tags: [Termux, Hexo]
 categories: [安卓, Termux, Hexo]
 description: 轻松使用Termux部署一个属于自己的博客
 cover: https://hexo.io/themes/screenshots/landscape.png
-permalink: /p/1/
 ---
 ## 前言
 此篇文章结合网络上的方法已经我个人的一些经验撰写，可能有些许不足，请谅解

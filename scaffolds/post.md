@@ -1,4 +1,5 @@
 ---
+permalink:
 title:
 date:
 updated:

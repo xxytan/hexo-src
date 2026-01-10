@@ -1,11 +1,11 @@
 ---
+permalink: p/2/
 title: 部署Hexo到各Pages
 date: 2025-12-21 01:22:49
 tags: [Hexo, Termux, Pages]
 categories: [Hexo, Pages]
 description: 轻松让你的Hexo在互联网永生
 cover: https://img.oxue.de/file/blog/2/cover.png
-permalink: /p/2/
 ---
 ## 前言
 {% note default %}

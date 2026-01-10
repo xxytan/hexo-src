@@ -14,7 +14,7 @@ timezone: Asia/Shanghai
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://b.oxue.de/
-permalink: p/:abbrlink/
+permalink: p/:title/
 permalink_defaults:
   lang: zh-CN
 pretty_urls:
@@ -112,6 +112,3 @@ feed:
   icon: icon.png
   autodiscovery: true
   template:
-
-abbrlink:
-  start: 0 # the first id, default 0
