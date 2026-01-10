@@ -1035,7 +1035,7 @@ lazyload:
   # Use browser's native lazyload instead of vanilla-lazyload
   native: false
   # Specify the field to use lazyload (site or post)
-  field: site
+  field: post
   placeholder: /self/loading.gif
   blur: true
 
