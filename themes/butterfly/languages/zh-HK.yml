@@ -29,7 +29,7 @@ post:
     author: 文章作者
     link: 文章連結
     copyright_notice: 版權聲明
-    copyright_content: '除特別聲明外，本博客所有文章均採用<a href="%s">%s</a> 授權協議。轉載請註明出處：<a href="%s">%s</a>。'
+    copyright_content: '除特別聲明外，文章均採用<a href="%s">%s</a> 授權協議。'
   recommend: 相關文章
   edit: 編輯
   back_to_home: 返回首頁
