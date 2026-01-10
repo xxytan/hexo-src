@@ -274,10 +274,8 @@ footer:
          item:
            - title: CloudFlare Pages
              url: https://b.oxue.de/
-           - title: GitHub Pages
-             url: https://roc.us.ci/
-           - title: EdgeOne Pages
-             url: https://www.roc.us.ci/
+           - title: G&E Pages
+             url: https://koe.qzz.io/
   owner:
     enable: true
     since: 2025
@@ -285,7 +283,7 @@ footer:
   copyright:
     enable: true
     version: false
-  custom_text: <a title="本站已加入萌备" target="_blank" href="https://icp.gov.moe/?keyword=20252235"><img src="https://img.shields.io/badge/%E8%90%8CICP%E5%A4%87-20252235%E5%8F%B7-pink?labelColor=purple"></a>
+  custom_text: <a title="本站已加入萌备" target="_blank" href="https://icp.gov.moe/?keyword=20252235"><img src="/self/moeicp.svg"></a>
 
 # --------------------------------------
 # Aside Settings
