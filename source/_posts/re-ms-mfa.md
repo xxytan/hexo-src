@@ -5,6 +5,7 @@ tags: [微软, MFA]
 categories: [吐槽, 一些解决方法]
 description: 微软你有贝斯吧！
 cover: https://img.oxue.de/file/blog/3/1.jpg
+permalink: /p/3/
 ---
 ## 前言
 前段时间给自己的E5全局管理员账户上了把锁（MFA），想着说安全性提高了，由于Microsoft Authenticator神一样的逻辑，锁的钥匙被我搞丢了

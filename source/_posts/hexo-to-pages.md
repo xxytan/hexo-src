@@ -5,6 +5,7 @@ tags: [Hexo, Termux, Pages]
 categories: [Hexo, Pages]
 description: 轻松让你的Hexo在互联网永生
 cover: https://img.oxue.de/file/blog/2/cover.png
+permalink: /p/2/
 ---
 ## 前言
 {% note default %}

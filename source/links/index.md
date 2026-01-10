@@ -59,7 +59,7 @@ descr: 无聊的一天搭配神经的我～
 ---
 
 <script src="https://giscus.app/client.js"
-        data-repo="xxytan/discuss-only"
+        data-repo="xxytan/xxytan"
         data-repo-id="R_kgDOQr23UA"
         data-category="Announcements"
         data-category-id="DIC_kwDOQr23UM4C0BTd"

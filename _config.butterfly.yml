@@ -652,7 +652,7 @@ twikoo:
 # Giscus
 # https://giscus.app/
 giscus:
-  repo: xxytan/discuss-only
+  repo: xxytan/xxytan
   repo_id: R_kgDOQr23UA
   category_id: DIC_kwDOQr23UM4C0BTd
   light_theme: noborder_light
