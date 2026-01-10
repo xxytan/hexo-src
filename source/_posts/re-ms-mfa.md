@@ -2,8 +2,8 @@
 title: 有关MFA的一些解决办法
 date: 2026-01-10 21:47:39
 tags: [微软, MFA]
-categories: [一些解决方法, 吐槽]
-description: 微软你妈又死又活的！
+categories: [吐槽, 一些解决方法]
+description: 微软你有贝斯吧！
 cover: https://img.oxue.de/file/blog/3/1.jpg
 ---
 ## 前言
@@ -25,9 +25,9 @@ cover: https://img.oxue.de/file/blog/3/1.jpg
 为什么说“由于微软验证器的神一样的逻辑”呢？🤔
 
 如果你是事先在设置中打开了备份，没错，你的数据的确会被备份到☁️，但是！
-要在第二台手机上登录时恢复这个备份，你可不能点亮眼的{% label 蓝色大按钮 blue %}，点了{% label 那就遭啦！ red %}，
+要在第二台手机上登录时恢复这个备份，你可不能点亮眼的{% label 大按钮 blue %}，点了{% label 那就遭啦！ red %}
 
-你得点下面的小字`从备份恢复`，这才是{% label 正确的步骤 green %}![4.png](https://img.oxue.de/file/blog/3/4.png)
+得点下面小字`从备份恢复`，这才是{% label 正确的步骤 green %}![4.png](https://img.oxue.de/file/blog/3/4.png)
 
 {% note warning %}
 如果你真的直接点`通过 Microsoft 登录`，那么你们备份就会被**覆盖**，你可以用之前登录的那台手机重新创建备份，那要是没有呢…就只能哈气了
