@@ -91,7 +91,7 @@ git push -u origin main
 ### 部署到GitHub Pages
 {% note primary %}
 利用GitHub Actions部署
-国内容易被墙
+~~国内容易被墙~~  *这段时间好像还挺好？*
 {% endnote %}
 
 #### 开始
@@ -190,3 +190,20 @@ public #构建输出目录
 
 #### 绑定域名
 打开项目，点到`项目设置`，找到`添加自定义域`，跟着引导走就行了，等到`DNS记录`&`证书`都呈现已部署状态就能通过自定义域名访问了![11.png](https://img.oxue.de/file/blog/2/11.png)
+
+### 部署到Vercel
+{% note primary %}
+国内访问速度还行，后续也可以通过优选提高访问速度，但提升效果不明显，自行搜寻
+{% endnote %}
+
+#### 开始
+登录[Vercel](https://vercel.com)，*新账号可能需要先创建团队*，
+
+点右上角的`Add New…`，选`Project`，授权一下你的Github，然后选择前面创建的仓库，会自动匹配预设，如果没有匹配请自行选择![13.jpg](https://img.oxue.de/file/blog/2/13.jpg)
+然后点`Deploy`，等待一会就部署好啦，点`Go to Dashboard`，就能看到一个`xxxxx.vercel.app`的域名，打开也是能够访问的
+
+#### 绑定域名
+点`Domains`旁的 ➕ 号，![14.jpg](https://img.oxue.de/file/blog/2/14.jpg)然后再点`Add Domain`，输入你想绑定的域名，点`Save`或回车↩︎，再把给出的`CNAME`记录添加到域名管理商，耐心等待一会，直至呈现`Valid Configuration`就行啦![15.jpg](https://img.oxue.de/file/blog/2/15.jpg)
+
+## 结尾
+由于Netlify每次部署都需要花费额度（其实每个月有免费的300$），所以不做教程，大概步骤都是一样的，*导入Git仓库，然后填构建命令*
