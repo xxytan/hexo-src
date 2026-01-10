@@ -1,10 +1,10 @@
 ---
 permalink: p/3/
-title: 有关MFA的一些解决办法
+title: 有关微软MFA的一些解决办法
 date: 2026-01-10 21:47:39
 tags: [微软, MFA]
 categories: [吐槽, 一些解决方法]
-description: 微软你有贝斯吧！
+description: 当MFA出错时，我哈气了
 cover: https://img.oxue.de/file/blog/3/1.jpg
 ---
 ## 前言
