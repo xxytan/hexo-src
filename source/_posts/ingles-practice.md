@@ -5,7 +5,7 @@ date: 2026-01-11 13:38:46
 tags: [学习, 英语]
 categories: [自我提升, 学习]
 description: 个人一些自我的英语作文，留个纪念就🥴
-cover:
+cover: https://img.oxue.de/file/blog/0/cover.jpeg
 ---
 {% note default %}
 就记记自己那些写过的英语作文，留个纪念，同时提升自己
