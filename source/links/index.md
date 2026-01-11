@@ -39,6 +39,10 @@ descr: 无聊的一天搭配神经的我～
       link: https://blog.crazywong.com
       avatar: https://blog.crazywong.com/img/avatar.png
       descr: 热衷学习，热衷生活
+    - name: 寒士杰克
+      link: https://www.hansjack.com/
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=2959602696&s=640
+      descr: 喜欢捣鼓，不断进步！
 {% endflink %}
 
 # 网站
