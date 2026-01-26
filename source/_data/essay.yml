@@ -1,0 +1,21 @@
+profile:
+  cover: /self/bgd2.jpg
+moments:
+  - text: 这么这么快假期就过了5天了😭
+    date: 2026-01-26
+  - text: 巅峰😎
+    date: 2026-01-09
+    images:
+      - https://roc.us.ci/file/za/record.png
+  - text: 我就这样炫耀我的成绩🥴
+    date: 2026-01-03
+    images:
+      - https://roc.us.ci/file/blog/leaves/2.jpg
+  - text: 解锁新域名：<mark>oxue.de</mark>！
+    date: 2026-01-02
+  - text: 新年第一杯奶茶🧋
+    date: 2026-01-01
+    images:
+      - https://roc.us.ci/file/blog/leaves/1.png
+  - text: 元旦快乐各位🎉
+    date: 2026-01-01
