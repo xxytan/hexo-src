@@ -1,0 +1,87 @@
+  {##################}
+  {### ESSAY BLOCK ###}
+  {##################}
+
+
+<style>
+  .post-header {
+    display: none;
+  }
+  .post-block:first-of-type {
+    padding-top: 60px;
+  }
+  @media (max-width: 767px) {
+    .post-block:first-of-type {
+      padding-top: 40px;
+    }
+  }
+  .cover { position: relative; max-width: 800px; margin: 0 auto; }
+  .cover img { width: 100%; height: 200px; object-fit: cover; }
+  .profile {
+    position: absolute; bottom: 10px; right: 20px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .profile span { color: #fff; font-weight: bold; font-size: 16px; }
+  .profile img { width: 50px; height: 50px; border-radius: 5px; }
+  .moments { max-width: 800px; margin: 20px auto; }
+  .card {
+    background: #fff; border-radius: 12px;
+    padding: 20px 25px; margin-bottom: 15px;
+  }
+  .card-header { display: flex; align-items: flex-start; gap: 10px; }
+  .card-header img { width: 50px; height: 50px; border-radius: 5px; }
+  .card-content { flex: 1; }
+  .card-content .name { font-weight: bold; color: #333; }
+  .card-content p { margin: 6px 0; color: #444; }
+  .images-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-top: 6px; }
+  .thumb { width: 100%; aspect-ratio: 1 / 1; overflow: hidden; border-radius: 8px; }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; }
+  .card-footer { display: flex; justify-content: space-between; margin-top: 8px; font-size: 14px; color: #777; }
+  .card-footer button { background: none; border: none; color: #555; cursor: pointer; }
+  .card-footer button:hover { color: #007aff; }
+  .post-body *, .post-body *::before, .post-body *::after {
+    box-sizing: border-box;
+  }
+</style>
+
+<!-- 顶部背景 -->
+{% set essay = site.data.essay %}
+<div class="cover">
+  <img src="{{ essay.profile.cover }}" style="border-radius: 12px;">
+  <a href="/"><div class="profile" style="border: none;">
+    <span>{{ config.author }}</span>
+    <img src="{{ theme.avatar.url }}" alt="头像" class="nofancybox" style="margin-bottom: 0;">
+  </div></a>
+</div>
+
+<!-- 动态列表 -->
+<div class="moments">
+  {% for moment in essay.moments %}
+  <div class="card">
+    <div class="card-header">
+      <a href="/" style="border: none;"><img src="{{ theme.avatar.url }}" alt="头像" class="nofancybox" style="margin-bottom: 0;"></a>
+      <div class="card-content">
+        <a href="/"><div class="name">{{ config.author }}</div></a>
+        <p>{{ moment.text }}</p>
+        <div class="images-container">
+          {% for img in moment.images %}
+            <div class="thumb">
+            <img src="{{ img }}">
+            </div>
+          {% endfor %}
+        </div>
+        <div class="card-footer">
+          <time class="datetime" datetime="{{ date(moment.date, "YYYY/MM/DD") }}">{{ date(moment.date, "YYYY/MM/DD") }}</time>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<script src="{{ url_for('/js/essay.js') }}" data-pjax></script>
+
+  {######################}
+  {### END ESSAY BLOCK ###}
+  {######################}
+  
