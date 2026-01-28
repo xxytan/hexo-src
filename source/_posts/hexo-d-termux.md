@@ -93,7 +93,7 @@ hexo s
 |-|-|
 |hexo s|映射本地预览网页，端口4000|
 |hexo g|以当前配置生成文件，生成在`./public`下|
-|hexo d[5]|部署到远程仓库|
+|hexo d[^5]|部署到远程仓库|
 |hexo cl|清理先前生成的文件|
 |hexo n post ~|新建文章，`~`即文章名字，生成在`./source/_posts`下|
 |hexo n draft ~|新建草稿，`~`即草稿名字，生成在`./source/_drafts`下|
