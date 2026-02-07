@@ -1,3 +1,5 @@
+<p align="center">已转<a href="https://github.com/xxytan/blog">Astro</a></p>
+
 ## 介绍
 ![网站截图](/source/self/snapshot.jpg)
 诞生于**25年8月**的一个小站，~~记录点滴~~
