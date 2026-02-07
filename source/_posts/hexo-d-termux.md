@@ -14,9 +14,8 @@ description: 轻松使用Termux部署一个属于自己的博客
 - 可以使用 {% btn https://github.com/termux/termux-app/releases/latest, 官方Termux %}
 - 或第三方的类似于 {% btn https://github.com/hanxinhao000/ZeroTermux/releases/latest, Zero Termux %} （以此做演示）
 
-{% note warning %}
+> [!WARNING]
 如果您是非ROOT用户，**<u>强烈建议您使用ZeroTermux进行下列步骤</u>**，否则后期编辑配置文件会很困难（当然你如果要是会命令行编辑，用官方版也行）
-{% endnote %}
 
 打开后跟着向导，授予基本权限，然后我们就可以开始
 

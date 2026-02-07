@@ -211,3 +211,13 @@ feed:
   order_by: -date
   icon: icon.png
   autodiscovery: true
+
+deploy:
+  type: ftpsync
+  host: 103.242.14.61
+  user: a474357
+  pass: ung35y3b
+  remote: /
+  port: 21
+  clear: false
+  verbose: false
